@@ -2,18 +2,18 @@ terraform {
   required_version = "=0.11.13"
 
   backend "s3" {
-    bucket  = "org-humancellatlas-upload-infra"
+    bucket  = "org-sampierson-terraform-state"
     key     = "terraform/envs/dev/state.tfstate"
     encrypt = true
     region  = "us-east-1"
-    profile = "hca"
+    profile = "hca-sam"
   }
 }
 
 provider "aws" {
   version = ">= 1.31"
   region = "us-east-1"
-  profile = "hca"
+  profile = "hca-sam"
 }
 
 module "upload-service" {
