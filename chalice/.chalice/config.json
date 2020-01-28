@@ -23,7 +23,7 @@
       "api_gateway_stage": "",
       "environment_variables": {}
     },
-    "sam": {
+    "new": {
       "api_gateway_stage": "",
       "environment_variables": {}
     }
